@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Welcome to My Website 🚀</h1>
+        <p>This is my first simple website.</p>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("msg").innerText = "Website Updated Successfully!";
+        }
+    </script>
+
+</body>
+</html>

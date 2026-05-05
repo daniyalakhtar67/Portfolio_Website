@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>My Portfolio Website</title>
+
     <style>
         body {
-            font-family: Arial;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f4f8;
             text-align: center;
-            padding: 50px;
         }
 
-        .box {
-            background: white;
+        header {
+            background: #007BFF;
+            color: white;
             padding: 20px;
-            border-radius: 10px;
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
             width: 300px;
             margin: auto;
-            box-shadow: 0px 0px 10px gray;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
         }
 
         h1 {
-            color: #333;
+            margin: 0;
         }
 
         p {
-            color: #666;
+            color: #555;
         }
 
         button {
+            margin-top: 10px;
             padding: 10px 15px;
             border: none;
-            background-color: #007BFF;
+            background: #28a745;
             color: white;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background: #1e7e34;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: #ddd;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="box">
-        <h1>Welcome to My Website 🚀</h1>
-        <p>This is my first simple website.</p>
+<header>
+    <h1>Daniyal Akhtar</h1>
+    <p>Web Developer | Student</p>
+</header>
 
-        <button onclick="showMessage()">Click Me</button>
+<div class="container">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a student learning web development and GitHub deployment.</p>
+
+        <button onclick="updateText()">Click to Update</button>
         <p id="msg"></p>
     </div>
+</div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("msg").innerText = "Website Updated Successfully!";
-        }
-    </script>
+<footer>
+    © 2026 My Portfolio Website
+</footer>
+
+<script>
+    function updateText() {
+        document.getElementById("msg").innerText =
+        "Website updated successfully 🚀";
+    }
+</script>
 
 </body>
 </html>
